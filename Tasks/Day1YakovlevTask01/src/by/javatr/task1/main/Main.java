@@ -1,15 +1,13 @@
 package by.javatr.task1.main;
 
-
-import by.javatr.presentation.ConsoleInsert;
 import by.javatr.task1.logic.Logic;
-import by.javatr.task1.logic.SquareLastDigit;
+import by.javatr.presentation.ConsoleInsert;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        SquareLastDigit squareLastDigit = new Logic();
+        Logic squareLastDigit = new Logic();
 
         ConsoleInsert consoleInsert = new ConsoleInsert();
 

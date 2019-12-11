@@ -5,14 +5,14 @@ import java.util.Objects;
 public class Date {
 
     private int year;
-    private Month month;
+    private int month;
 
     protected Date(){
         this.year = 1;
-        this.month = Month.JANUARY;
+        this.month = 1;
     }
 
-    public int getYear() {
+    protected int getYear() {
         return year;
     }
 
@@ -20,11 +20,11 @@ public class Date {
         this.year = year;
     }
 
-    public Month getMonth() {
+    public int getMonth() {
         return month;
     }
 
-    public void setMonth(Month month) {
+    public void setMonth(int month) {
         this.month = month;
     }
 
@@ -40,5 +40,13 @@ public class Date {
     @Override
     public int hashCode() {
         return Objects.hash(getYear(), getMonth());
+    }
+
+    @Override
+    public String toString() {
+        return "Date{" +
+                "year=" + year +
+                ", month=" + month +
+                '}';
     }
 }

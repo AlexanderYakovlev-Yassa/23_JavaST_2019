@@ -1,9 +1,8 @@
 package by.javatr.task1.logic;
 
-public class Logic implements SquareLastDigit {
+public class Logic{
 
-    @Override
-    public int defineSquareLastDigit(int number) {
+    public static int defineSquareLastDigit(int number) {
 
         int res = 0;
 
@@ -36,7 +35,7 @@ public class Logic implements SquareLastDigit {
         return res;
     }
 
-    private int lastDigit(int number){
+    private static int lastDigit(int number){
 
         return number%10;
     }
