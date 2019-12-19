@@ -13,7 +13,7 @@ public class Basket {
     }
 
     public Basket() {
-        this.content = null;
+        this.content = new ArrayList<Basketable>();
         this.maxContentWeight = 1000;
     }
 
@@ -39,12 +39,16 @@ public class Basket {
 
     public boolean addItem(Basketable item){
 
+        //content.add(item);
+
         if (!hasSuchItem(item)) {
             content.add(item);
             return true;
         } else {
             return false;
         }
+
+        //return  true;
     }
 
     private boolean hasSuchItem(Basketable item){

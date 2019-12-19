@@ -1,8 +1,11 @@
 package logic;
 
+import logic.enumerator.Color;
+import logic.enumerator.ItemKind;
+
 import java.util.Objects;
 
-public class Ball implements Basketable{
+public class Ball implements Basketable, Colorable {
 
 	private Color color;
 	private int weight;
@@ -19,6 +22,7 @@ public class Ball implements Basketable{
 		this.weight = 100;
 	}
 
+	@Override
 	public Color getColor() {
 		return color;
 	}
@@ -58,7 +62,7 @@ public class Ball implements Basketable{
 	}
 
 	@Override
-	public ItemKind getItemKind(Basketable item) {
+	public ItemKind getItemKind() {
 		return ItemKind.BALL;
 	}
 }

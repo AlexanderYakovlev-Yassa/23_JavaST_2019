@@ -1,18 +1,11 @@
 package logic;
 
-public class BasketLogic {
+import logic.enumerator.Color;
+import logic.enumerator.ItemKind;
 
-    public static int numberItemKind(Basket basket, ItemKind itemKind){
+public interface BasketLogic {
 
-        int num = 0;
-
-        for(Basketable b : basket.getContent()){
-
-            if (itemKind == b.getItemKind()){
-                num++;
-            }
-        }
-
-        return num;
-    }
+    public int countItem(Basket basket);
+    public int countItemByType(Basket basket, ItemKind itemKind);
+    public int countItemByTypeAndColor(Basket basket, ItemKind itemKind, Color color);
 }
