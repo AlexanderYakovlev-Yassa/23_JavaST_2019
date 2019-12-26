@@ -1,0 +1,5 @@
+//the file contents the list of users
+//a record contains next fields:
+//[id][status][first_name][last_name][login][password_hash]
+1 admin Alexander Yakovlev alex @098876
+2 user Alexander Yakovlev ualex @098877

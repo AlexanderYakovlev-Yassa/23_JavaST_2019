@@ -1,0 +1,3 @@
+//file contains financial operations
+//a record contains next fields:
+//[user_id][date][operation_type_id][operation value]
