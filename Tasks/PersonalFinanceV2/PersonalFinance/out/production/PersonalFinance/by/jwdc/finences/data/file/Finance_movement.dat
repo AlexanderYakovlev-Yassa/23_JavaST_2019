@@ -1,0 +1,6 @@
+//file contains financial operations
+//a record contains next fields:
+//[date][operation_type_id][operation value]
+202001051200 earning 1640.00
+202001051800 food 50.00
+202001051930 entertainment 18.00
