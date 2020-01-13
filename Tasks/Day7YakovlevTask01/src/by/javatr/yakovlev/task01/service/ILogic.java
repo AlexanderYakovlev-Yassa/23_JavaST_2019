@@ -8,9 +8,4 @@ public interface ILogic {
     Array createArray();
 
     Array filteredArray(Array array, IFilter filter);
-
-    int binarySearch(Array array, int element);
-    int binarySearch(Array array, int element, int left, int right);
-
-
 }
